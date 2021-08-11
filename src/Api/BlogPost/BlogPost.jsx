@@ -32,6 +32,14 @@ class BlogPost extends Component {
       (res) => {
         console.log(res);
         this.getPostAPI();
+        this.setState({
+          fromBlogPost: {
+            id: 1,
+            title: "",
+            body: "",
+            userId: 1,
+          },
+        });
       },
       (err) => {
         console.log("error :", err);
@@ -43,16 +51,35 @@ class BlogPost extends Component {
     console.log(data);
     axios.delete(`http://localhost:3004/posts/${data}`).then((res) => {});
     this.getPostAPI();
+    this.setState({
+      fromBlogPost: {
+        id: 1,
+        title: "",
+        body: "",
+        userId: 1,
+      },
+    });
   };
 
   //End Remove............................................................
 
   //API untuk Update data.................................................
+  putDataToAPI = () => {
+    axios.put(`http://localhost:3004/posts/${this.state.fromBlogPost.id}`, this.state.fromBlogPost).then((res) => {
+      console.log(res);
+      this.getPostAPI();
+      this.setState({
+        isUpdate: false,
+        fromBlogPost: {
+          id: 1,
+          title: "",
+          body: "",
+          userId: 1,
+        },
+      });
+    });
+  };
   handleUpdate = (data) => {
-    // axios.put(`http://localhost:3004/posts/${data}`, this.state.fromBlogPost).then((res) => {
-    //   console.log(res);
-    //   this.getPostAPI();
-    // });
     console.log(data);
     this.setState({
       fromBlogPost: data,
@@ -66,7 +93,9 @@ class BlogPost extends Component {
   handleFormChange = (event) => {
     let fromBlogPostNew = { ...this.state.fromBlogPost };
     let timestamp = new Date().getTime();
-    fromBlogPostNew["id"] = timestamp;
+    if (!this.state.isUpdate) {
+      fromBlogPostNew["id"] = timestamp;
+    }
     fromBlogPostNew[event.target.name] = event.target.value;
     this.setState({
       fromBlogPost: fromBlogPostNew,
@@ -74,7 +103,8 @@ class BlogPost extends Component {
   };
 
   handleSumbit = () => {
-    if (isUpdate) {
+    if (this.state.isUpdate) {
+      this.putDataToAPI();
     } else {
       this.postDataToAPI();
     }

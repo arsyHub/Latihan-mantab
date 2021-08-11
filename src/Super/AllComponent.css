@@ -1,0 +1,234 @@
+/* Navbar */
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 20px;
+}
+
+.navbar-brand img {
+    width: 39px;
+    height: 37px;
+    margin-right: 8px;
+    margin-top: -4px;
+}
+
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url(./img/5.jpg);
+    background-attachment: fixed;
+    /* filter: brightness(70%); */
+    background-size: cover;
+    height: 240px;
+    text-align: center;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron .display-4 {
+    color: white;
+    padding-top: 58px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7);
+    font-size: 22px;
+    margin-bottom: 28px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+
+/* Info Panel */
+
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -50px;
+    background-color: white;
+    border-bottom: solid #ffc107;
+    padding: 30px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+
+/* My Profile */
+
+.txtprofil {
+    /* text-align: center; */
+    margin-top: 90px;
+    margin-bottom: 85px;
+    color: #888888;
+    padding: 20px;
+    border-bottom: solid #ffc107;
+}
+
+.konten .img-fluid {
+    margin-top: -50px;
+    width: 380px;
+    height: 370px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-bottom: solid yellow;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container h6 {
+    margin-top: 10px;
+}
+
+.col-lg-3 {
+    border-right: solid #acacac;
+}
+
+
+/* Project Create */
+
+.txtproject {
+    color: #acacac;
+    margin-top: 150px;
+    padding: 30px;
+}
+
+.konten2 .img-fluid {
+    height: 200px;
+    width: 200px;
+}
+
+.up {
+    margin-left: 300px;
+}
+
+
+/* Utility */
+
+.tombol {
+    text-transform: uppercase;
+    border-radius: 45px;
+}
+
+
+/* Desktop Version */
+
+@media (min-width: 992px) {
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7);
+    }
+    .navbar-brand {
+        font-size: 32px;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        /* border-bottom: 3px solid #0b63dc; */
+        border-bottom: 3px solid yellow;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron {
+        margin-top: -75px;
+        height: 620px;
+    }
+    .jumbotron .display-4 {
+        color: white;
+        padding-top: 150px;
+        font-weight: 200;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7);
+        font-size: 62px;
+        margin-bottom: 50px;
+    }
+    .jumbotron .display-4 span {
+        font-weight: 500;
+    }
+    .info-panel {
+        margin-top: -70px;
+    }
+    /*  Project Create*/
+    .projek1 {
+        background-image: url(img/p1.jpg);
+        background-size: cover;
+        left: 20px;
+        height: 300px;
+        width: 200px;
+        background-color: #acacac;
+        border-radius: 10px;
+        margin-top: 65px;
+        filter: brightness(30%);
+        filter: blur(2px);
+    }
+    .projek1:hover {
+        filter: brightness(100%);
+        border-bottom: solid yellow;
+    }
+    .projek2:hover {
+        filter: brightness(100%);
+        border-bottom: solid yellow;
+    }
+    .projek3:hover {
+        filter: brightness(100%);
+        border-bottom: solid yellow;
+    }
+    .projek2 {
+        background-image: url(img/p3.jpg);
+        background-size: cover;
+        height: 400px;
+        width: 400px;
+        background-color: #acacac;
+        margin: 20px;
+        border-radius: 10px;
+        filter: brightness(30%);
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+        filter: blur(1px);
+    }
+    .projek3 {
+        background-image: url(img/p2.jpg);
+        background-size: cover;
+        height: 300px;
+        width: 200px;
+        background-color: #acacac;
+        border-radius: 10px;
+        margin-top: 65px;
+        filter: brightness(30%);
+        filter: blur(2px);
+    }
+    .jumbo-project {
+        height: 540px;
+        margin-top: 200px;
+        border-bottom: solid yellow;
+    }
+    .col-lg-4 h4 {
+        color: white;
+    }
+    /* up page */
+    .up {
+        margin-left: 1300px;
+    }
+}

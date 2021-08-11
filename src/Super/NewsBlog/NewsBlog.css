@@ -1,0 +1,222 @@
+/* Top Header */
+
+.txLogo {
+    color: #dc3545;
+    font-family: viga;
+    font-weight: 800;
+}
+
+.txLogo span {
+    color: black;
+}
+
+ul li {
+    display: inherit;
+}
+
+.navbar {
+    margin-top: -30px;
+}
+
+marquee {
+    color: #dc3545;
+}
+
+
+/* main content */
+
+.main {
+    margin-top: 20px;
+    /* background-color: white; */
+    height: 1810px;
+    width: auto;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.berita {
+    height: 340px;
+    width: 760px;
+    background-color: yellow;
+}
+
+.berita .container h2 {
+    margin-top: -17px;
+    color: #6e6969;
+}
+
+.berita .container p {
+    color: #acacac;
+    margin-top: 5px;
+}
+
+.tranding {
+    background-color: #dc3545;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+.tran-isi {
+    background-color: white;
+    margin-left: 5px;
+    margin-right: 8px;
+    padding-left: 10px;
+}
+
+.tran-isi p {
+    color: #dc3545;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tran-isi a {
+    text-decoration: none;
+    color: black;
+}
+
+.tranding h5 {
+    color: white;
+}
+
+
+/* Kategori */
+
+.bg-kategori {
+    background-color: white;
+    height: 100px;
+    width: 343px;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+
+/* iklan */
+
+.bg-iklan {
+    background-color: white;
+    height: 350px;
+    width: 343px;
+    margin-left: 5px;
+    padding-top: 5px;
+    margin-top: 18px;
+}
+
+.bg-iklan p {
+    color: #acacac;
+    margin-top: 130px;
+}
+
+
+/* Main Content Populer */
+
+.container h4 {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.isi-berita a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.isi-berita {
+    margin-top: 5px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    min-height: 230px;
+}
+
+.isi-berita img {
+    width: 290px;
+    height: 180px;
+    padding-right: 10px;
+}
+
+.dateB {
+    font-size: 12px;
+}
+
+
+/* pagination */
+
+.btn-danger {
+    margin-left: 4px;
+}
+
+.paging {
+    margin-left: 294px;
+    margin-top: 69px;
+}
+
+
+/* share */
+
+.share {
+    margin-top: 300px;
+}
+
+.shareApp {
+    background-color: teal;
+    width: 100px;
+    padding: 4px;
+    border-radius: 4px;
+    margin-bottom: 1px;
+    filter: opacity(25%);
+}
+
+.shareApp a {
+    font-size: 12px;
+}
+
+.shareApp:hover {
+    margin-left: 5px;
+    filter: brightness(78%);
+}
+
+.fb {
+    background-color: blue;
+    width: 110px;
+}
+
+.tw {
+    background-color: rgb(106, 216, 216);
+    width: 105px;
+}
+
+.wa {
+    background-color: green;
+    width: 95px;
+}
+
+.shareApp .btn {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: 120px;
+}
+
+.footer h6 {
+    color: #696464;
+}
+
+.footer p {
+    color: #acacac;
+}
+
+
+/* on Android */
+
+@media (min-width: 576px) {
+    .navbar {
+        width: 100%;
+    }
+}

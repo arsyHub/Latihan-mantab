@@ -1,0 +1,42 @@
+.txtIcon {
+    font-family: viga;
+    color: #dc3545;
+    font-weight: 800;
+    margin-left: 30px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.7);
+}
+
+legend {
+    color: #383737;
+}
+
+.txtIcon span {
+    color: black;
+}
+
+.txtIsi {
+    color: #acacac;
+    padding: 5px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.main h3 {
+    padding-top: 40px;
+    color: #acacac;
+    padding-bottom: 70px;
+}
+
+
+/* Suport */
+
+.txtSuport {
+    margin-top: 170px;
+    padding: 20px;
+}
+
+.img-spon {
+    width: 70px;
+    height: 65px;
+    padding: 10px;
+}

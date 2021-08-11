@@ -1,0 +1,27 @@
+{
+    "data": [{
+            "id": 1,
+            "nama": "Laptop23wdwa",
+            "harga": 1500000232,
+            "kategori": "Elektroniks23d",
+            "created_at": "2021-08-04T08:44:50.000000Z",
+            "updated_at": "2021-08-04T14:13:08.000000Z"
+        },
+        {
+            "id": 2,
+            "nama": "Laptop",
+            "harga": 1500000,
+            "kategori": "Elektronik",
+            "created_at": "2021-08-04T09:25:35.000000Z",
+            "updated_at": "2021-08-04T09:25:35.000000Z"
+        },
+        {
+            "id": 3,
+            "nama": "Laptop",
+            "harga": 1500000,
+            "kategori": "Elektronik",
+            "created_at": "2021-08-04T09:25:36.000000Z",
+            "updated_at": "2021-08-04T09:25:36.000000Z"
+        }
+    ]
+}
